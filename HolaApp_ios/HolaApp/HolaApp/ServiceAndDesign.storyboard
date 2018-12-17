@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Service And Design View Controller-->
+        <scene sceneID="Z6z-X1-Dih">
+            <objects>
+                <viewController storyboardIdentifier="ServiceAndDesignView" id="xjL-Jy-kGs" customClass="ServiceAndDesignViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WcN-0i-bes"/>
+                        <viewControllerLayoutGuide type="bottom" id="EXW-vx-JxH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3eB-ig-L5H">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CB0-Mw-LOq">
+                                <rect key="frame" x="0.0" y="20" width="600" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOLA 居家佈置設計服務" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7db-7g-IYf">
+                                        <rect key="frame" x="191" y="15" width="219" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="5OZ-Lj-hLM"/>
+                                    <constraint firstAttribute="centerY" secondItem="7db-7g-IYf" secondAttribute="centerY" id="juf-aL-ikd"/>
+                                    <constraint firstAttribute="centerX" secondItem="7db-7g-IYf" secondAttribute="centerX" id="zZ8-bC-mRe"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aH-9W-slW">
+                                <rect key="frame" x="0.0" y="74" width="600" height="526"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CB0-Mw-LOq" firstAttribute="leading" secondItem="3eB-ig-L5H" secondAttribute="leading" id="BSU-LB-xlK"/>
+                            <constraint firstItem="6aH-9W-slW" firstAttribute="leading" secondItem="3eB-ig-L5H" secondAttribute="leading" id="EFs-M3-a5X"/>
+                            <constraint firstAttribute="trailing" secondItem="6aH-9W-slW" secondAttribute="trailing" id="K14-M0-X0s"/>
+                            <constraint firstAttribute="trailing" secondItem="CB0-Mw-LOq" secondAttribute="trailing" id="NOm-Ob-bkU"/>
+                            <constraint firstItem="6aH-9W-slW" firstAttribute="top" secondItem="CB0-Mw-LOq" secondAttribute="bottom" id="YQp-bY-EjP"/>
+                            <constraint firstItem="EXW-vx-JxH" firstAttribute="top" secondItem="6aH-9W-slW" secondAttribute="bottom" id="aPn-5a-mfO"/>
+                            <constraint firstItem="WcN-0i-bes" firstAttribute="bottom" secondItem="CB0-Mw-LOq" secondAttribute="top" id="kKF-wm-Efp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="6aH-9W-slW" id="scq-u8-Ctr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2M-Ow-QZ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395" y="128"/>
+        </scene>
+    </scenes>
+</document>
